@@ -26,7 +26,7 @@
  ![主界面](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/%40A8%7BE30QME%5B%5B8FEW0YZM9J7.png)
 #### 效果图
 
-1.图片上传，裁剪    
+1.图片上传，裁剪    ----固定裁剪框和比例设置都由开发者选择属性是否使用    
 
 ![图片上传，裁剪](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/A%5BB%251QD%7EQ%5DY5UU%25YKWD%7B0P7.png)
  
@@ -36,4 +36,4 @@
 
 3.图片懒加载      
 
-![图片懒加载](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/Y%7DUYM73%5D%7EXMKD%7D%29ZXRZ3%7E%28W.png)  
+![图片懒加载](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/%7BBGR%5DG%25%600GYD3P9KQ2%7B73YQ.png)  
