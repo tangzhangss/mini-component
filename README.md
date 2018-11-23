@@ -3,7 +3,7 @@
 
 #### 目录结构
 
-* component               >     （组件总目录）
+* component                 [^(组件总目录）]
    * 目录一                 （组件一）
    * 目录二                 （组件二）
 * component_index           (使用组件demo主页面)
