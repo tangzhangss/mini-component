@@ -1,0 +1,24 @@
+<!--pages/component_indax/picture-cut/picture-cut.wxml-->
+<!--
+    
+    //是否采用压缩图 默认都有_仅可取值两种取值 与getimage一样
+    "sizeType"
+    //是否需要裁剪图片 默认 不裁剪
+    "needCut"  不填就表示false  不能用其他类型的那样  只要用属性了就是true
+    //裁剪图片的高宽比是否固定 默认可调控(active)  另 fixed
+    "cutScaleStatus"
+    //裁剪的高宽比 默认为1  如何cut-scale-status为active 此参数无效
+    "cutScale"设置不合理会出现 细节体验 请开发者自己 注意
+ -->
+<picture_cut id="picture-cut"   need-cut
+
+  bind:contentStartMove="_contentStartMove"  
+  bind:contentMoveing="_contentMoveing"
+  bind:dragStart="_dragStart"
+  bind:dragMove="_dragMove"
+  bind:scaleChange="_scaleChange"
+  bind:getImageInfo="_getImageInfo"
+  bind:changefixedRatio="_changefixedRatio"
+  bind:alterScaleBtn="_alterScaleBtn"
+ >
+</picture_cut>

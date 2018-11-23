@@ -1,0 +1,79 @@
+
+.head-logo{
+  width: 100%;
+  height: 300rpx;
+}
+.nav{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+}
+.nav-one{
+  width: 33vw;
+  text-align: center;
+}
+.nav-one image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.getcard{
+  width: 95%;
+  height: 200rpx;
+  border-radius:20rpx; 
+  display: block;
+  margin:0rpx auto;
+  margin-top: 30rpx;
+  border:1px solid #fde2bf;
+}
+
+
+.card{
+  width: 95vw;
+  margin: 20rpx auto;
+  border-radius: 20rpx; 
+   border:1px solid rgba(0, 0, 0, 0.1);
+   display: flex;
+   position: relative;
+}
+.card .left-head{
+  width: 15vw;
+  height: 15vw;
+  border-radius: 15vw;
+  margin: 5vw;
+}
+.card .right-info{
+  width:70vw;
+  padding: 5rpx 0;
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+.card .right-info view{
+  height: 40rpx;
+  line-break: 40rpx;
+  overflow: hidden;
+}
+.card .right-info .name{
+   height: 60rpx;
+  line-break: 60rpx;
+  font-size: 35rpx;
+  color: black;
+}
+.card .right-info .other text{
+   display: inline-block;
+   color: #f7a437;
+}
+.card .right-info .other .distance{
+  float: right;
+  margin-right: 10rpx;
+}
+.card .ab-msg{
+  position: absolute;
+  width: 60rpx;
+  height:60rpx;
+  right: 5rpx;
+  top: 5rpx;
+}
+

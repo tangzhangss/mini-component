@@ -1,0 +1,51 @@
+
+<image class='head-logo' src='{{logo}}'></image>
+
+<view class='nav'>
+  <view class='nav-one'>
+      <text>附近的人</text>
+      <image src='{{narrowbot}}'></image>
+  </view>
+  <view class='nav-one'>
+      <text>所有行业</text>
+      <image src='{{narrowbot}}'></image>
+  </view>
+  <view class='nav-one'>
+      <text>所有地区</text>
+      <image src='{{narrowbot}}'></image>
+  </view>
+</view>
+
+<image class='getcard' src='{{getcard}}'>
+</image>
+
+<block wx:for="{{cards}}" wx:key="id">
+   <view class='card'>
+       <image class='left-head' src='{{item.logo}}'>  
+       </image>
+       <view class='right-info'>
+          <view class='name'>{{item.name}}</view>
+          <view class='post'>{{item.post}}</view>
+          <view class='company'>{{item.company}}</view>
+          <view class='other'>
+             <text>{{item.notice}}</text>关注
+             <text>{{item.good}}</text>点赞
+             <text>{{item.watch}}</text>人气
+             <text class='distance'>{{item.distance}}km</text>
+          </view>
+       </view>
+
+       <image class='ab-msg' src='{{msg}}'> </image>
+   </view>
+</block>
+
+<!--
+   
+   上划加载更多组件 
+   属性 string(类型)  have-more   
+   （取值）false true（取值）   
+   string(类型) loading
+-->
+<bottomLoadMore have-more="{{haveMore}}"  loading="{{loading}}" ></bottomLoadMore>
+
+

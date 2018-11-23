@@ -1,0 +1,42 @@
+<!--pages/component/picture_cut/picture_cut.wxml-->
+<view class="wx-content-info" wx:if="{{imageSrc}}">
+  <!--容器-->
+  <view wx:if="{{isShowImg}}" class="wx-corpper" style="{{cropperInitW}}px;height:{{cropperInitH}}px;margin-top:20px;">
+    <!--图片-->
+    <view class="wx-corpper-content" style="width:{{cropperW}}px;height:{{cropperH}}px;left:{{cropperL}}px;top:{{cropperT}}px">
+      <image src="{{imageSrc}}" style="width:{{cropperW}}px;height:{{cropperH}}px"></image>
+      <view class="wx-corpper-crop-box" bindtouchstart="_contentStartMove" bindtouchmove="_contentMoveing" style="width:{{cutW}}px;height:{{cutH}}px;left:{{cutL}}px;top:{{cutT}}px">
+        <view class="wx-cropper-view-box">
+          <!--中间虚线 采用绝对定位 所以会跟着整个框走-->
+          <view class="wx-cropper-dashed-h"></view>
+          <view class="wx-cropper-dashed-v"></view>
+
+          <!--剪裁框四周的线  拖拽可延长-->
+          <view class="wx-cropper-line-t" data-drag="top" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-line-r" data-drag="right" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-line-b" data-drag="bottom" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-line-l" data-drag="left" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-point point-t" data-drag="top" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-point point-tr" data-drag="topTight"></view>
+          <view class="wx-cropper-point point-r" data-drag="right" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-point point-rb" data-drag="rightBottom" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-point point-b" data-drag="bottom" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-point point-bl" data-drag="bottomLeft"></view>
+          <view class="wx-cropper-point point-l" data-drag="left" catchtouchstart="_dragStart" catchtouchmove="_dragMove"></view>
+          <view class="wx-cropper-point point-lt" data-drag="leftTop"></view>
+        </view>
+      </view>
+    </view>
+    <!-- <view class="wx-cropper-drag-box"></view> -->
+  </view>
+  <canvas canvas-id="myCanvas" style="position:absolute;width:{{imageW}}px;height:{{imageH}}px;top:-9999px;left:-9999px;"></canvas>
+  <view class='alterScale' wx:if="{{cutScaleStatus=='active'}}">
+    <input class='alterScale-input' placeholder='请输入剪切框的高宽比' placeholder-style='color:#ccc;font-size:25rpx'  bindinput='_scaleChange' value='{{cutScale}}'></input>
+    <view class='alterScale-btn' catchtap='_alterScaleBtn'>改变高宽比</view>
+  </view>
+  <view wx:if="{{cutScaleStatus=='active'}}" class="cut-hw-scale {{fixedRatio?'cut-hw-scale-click':''}}" catchtap='_changefixedRatio'>固定高宽比</view>
+  <button type="primary" bindtap="_getImageInfo" class="create-image ">生成图片 </button>
+</view>
+
+
+  

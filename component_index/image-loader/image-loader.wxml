@@ -1,0 +1,40 @@
+<!--pages/component_index/image-loader/image-loader.wxml-->
+
+<!--
+ mode 图片模式 默认: widthFix
+ prevImage 占位图 如果是相对地址 必须是相对组件所在位置的地址
+ 如果mode需要高宽 必须要给image-loader指定高宽..
+
+ image-style 设置组件的样式如style   2018-10-12其他标签设置不起作用！
+ 
+ 如果是列表:(会改变图片都src)
+
+ 需要添加 loaded属性 data-index(当前list的索引)  并在添加图片加载完成回调事件bindload 
+ 用户将此记录都loaded属性置为"true"
+ 
+ bindload='imageLoaded' 
+
+  //图片加载回调
+  imageLoaded:function(e){
+     let index = e.currentTarget.dataset.index;
+    let list = this.data.list;
+    list[index].loading = "true";
+    this.setData({
+      list: list,
+    })
+  },
+
+-->
+
+<view class='box'>
+      <view  class='left'>
+        <block wx:for="{{list}}" wx:key="">
+            <image-loader data-index='{{index}}' wx:if="{{index%2 == 0}}" src='{{item}}' catchtap='preImage' image-style="width:50vw;"></image-loader>
+        </block>
+      </view>
+      <view  class='right'>
+        <block wx:for="{{list}}" wx:key="">
+            <image-loader data-index='{{index}}' wx:if="{{index%2 != 0}}" src='{{item}}' catchtap='preImage' image-style="width:50vw;"></image-loader>
+        </block>
+      </view>
+</view>

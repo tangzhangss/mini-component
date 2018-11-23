@@ -1,0 +1,16 @@
+/* pages/component_index/image-loader/image-loader.wxss */
+.box{
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-flow: wrap;
+}
+.box >view{
+   clear: both;
+   width: 50vw;
+   display:flex;
+   justify-items: center;
+   align-items: center;
+   flex-direction: column;
+}

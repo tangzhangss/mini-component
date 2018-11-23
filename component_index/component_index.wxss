@@ -1,0 +1,37 @@
+/* pages/component_indax/component_indax.wxss */
+.one{
+  
+  width: 95vw;
+  margin: 10px auto;
+  border-radius:10px; 
+  display: flex;
+}
+.imgageUpload{
+   border: 1px  solid red;
+}
+.one .left{
+  width: 20vw;
+  height: 20vw;
+  margin-left:1vw;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+.one .right{
+  width: 72vw;
+  height: 20vw;
+  margin-left: 2vw;
+}
+.one .right .text{
+   font-size: 20rpx;
+   margin-top:5rpx;
+   color: rgba(0, 0, 0, 0.4);
+}
+.bottomLoadMore{
+    border: 1px  solid rgb(214, 82, 5);
+}
+.listSelect{
+  border: 1px  solid blue;
+}
+.image-loader{
+  border: 1px  solid purple;
+}
