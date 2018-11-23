@@ -9,8 +9,8 @@
 * component_index           (使用组件demo主页面)
    * 目录一                  (组件一demo)
    * 目录二                  (组件二demo)
-   * component_index.xml     (小程序页面 通过这个页面汇集组件demo的调用)  
-                             >      组件使用方法说明也在此页面 
+   * component_index.wxml     (小程序页面 通过这个页面汇集组件demo的调用)  
+>      组件使用方法说明也在此页面 
   
 #### 如何使用 将demo弄进微信小程序
  
