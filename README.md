@@ -45,5 +45,5 @@
 
 ##### 4.微信小程序用户授权组件
 
-![用户授权](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/%7BBGR%5DG%25%600GYD3P9KQ2%7B73YQ.png)  
+![用户授权](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/%29958%5BLU%25HSX8%24P7GWH_GJCV.png)  
 
