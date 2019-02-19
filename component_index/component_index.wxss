@@ -35,3 +35,6 @@
 .image-loader{
   border: 1px  solid purple;
 }
+.auth{
+  border: 1px  solid #1afa29;
+}

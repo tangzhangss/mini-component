@@ -17,7 +17,15 @@
 <view class='one image-loader' catchtap='to_imageLoaderpage'>
    <image class='left' src='{{imageLoaderUrl}}'></image>
    <view class='right'>
-       <view class='title'>图片预加载组件</view>
+       <view class='title'>图片懒加载组件</view>
        <view class='text'>让网络图片慢慢的显示出来，提升用户体验,需要开发者设置宽度和mode属性(默认：widthFix)</view>
+   </view>
+</view>
+
+<view class='one auth' catchtap='to_authpage'>
+   <image class='left' src='{{authUrl}}'></image>
+   <view class='right'>
+       <view class='title'>微信用户授权组件</view>
+       <view class='text'>这东西几乎每个页面都要用，单独写出来copy,方便做项目使用...</view>
    </view>
 </view>

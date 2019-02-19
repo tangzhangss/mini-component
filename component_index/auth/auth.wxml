@@ -1,0 +1,10 @@
+<!--pages/component_index/auth/auth.wxml-->
+
+<!---是否显示组件 由组件内部决定 对比app.js userinfo类似的属性-->
+
+<!--
+  color主要颜色  
+  authCallback授权回调函数（必须） 
+  app.js is need "userInfo" attribute
+-->
+<auth bind:authCallback="authCallback" id="auth_modal"></auth>

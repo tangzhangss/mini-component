@@ -9,6 +9,7 @@ Page({
     imgageUploadUrl:'',
     bottomLoadMoreUrl: app.globalData.imgurl+"/component/loading.png",
     imageLoaderUrl: app.globalData.imgurl + "/component/image-loader.png",
+    authUrl: app.globalData.imgurl + "/component/auth.png",
   },
   //图片上传
   to_pictureCutpage:function(){
@@ -26,6 +27,11 @@ Page({
     wx.navigateTo({
       url: './image-loader/image-loader',
     })
+  },
+  to_authpage:function(){
+    wx.navigateTo({
+      url: './auth/auth',
+    })  
   },
   /**
    * 生命周期函数--监听页面加载
