@@ -17,7 +17,7 @@
   
 #### 效果预览--关注我的小程序即可看到效果
 
-![逐运人生](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/gh_3a849a69c21a_258.jpg)
+![逐运网络](http://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/gh_3a849a69c21a_258.jpg)
 
 #### 如何使用 将demo弄进微信小程序
  
