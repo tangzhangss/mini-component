@@ -1,0 +1,55 @@
+/**app.wxss**/
+.container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.flex{
+  display: flex;
+}
+.font18 {
+  font-size: 18rpx;
+}
+
+.font20 {
+  font-size: 20rpx;
+}
+
+.font22 {
+  font-size: 22rpx;
+}
+
+.font24 {
+  font-size: 24rpx;
+}
+
+.font26 {
+  font-size: 26rpx;
+}
+
+.font28 {
+  font-size: 28rpx;
+}
+
+.font32 {
+  font-size: 32rpx;
+}
+
+.font36 {
+  font-size: 36rpx;
+}
+
+.font56 {
+  font-size: 56rpx;
+}
+
+.white {
+  background-color: #fff;
+}

@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/component_index/component_index",
+    "pages/component_index/picture-cut/picture-cut",
+    "pages/component_index/bottomLoadMore/bottomLoadMore",
+    "pages/component_index/image-loader/image-loader",
+    "pages/component_index/auth/auth"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffd801",
+    "navigationBarTitleText": "逐运网络_组件库",
+    "navigationBarTextStyle": "black"
+  }
+}
