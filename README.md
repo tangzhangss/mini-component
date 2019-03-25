@@ -23,13 +23,13 @@
  
   1.直接创建clone此项目
   2.创建小程序
-  3.将项目放在page目录下，app.json中 添加‘pages’ 并将  component_index/component_index 设置为主页
+  3.直接导入即可
   ###### 注意 
+
        图片上传 需要用到  app.js 中的 imgageUploadUrl属性  所以需要在app.js中添加此属性
+
+       app.js 需有userInfo属性 
  
-#### 主界面    
-       组件更新此界面，可能不会更新，需知有多少组件前看下面组件截图
- ![主界面](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/%40A8%7BE30QME%5B%5B8FEW0YZM9J7.png)
 #### 效果图
 
 ##### 1.图片上传，裁剪    ----固定裁剪框和比例设置都由开发者选择属性是否使用    
@@ -45,7 +45,7 @@
 ![图片懒加载](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/%7BBGR%5DG%25%600GYD3P9KQ2%7B73YQ.png)  
 
 
-##### 4.微信小程序用户授权组件
+##### 4.微信小程序用户授权组件     ----- 主题颜色 背景设置
 
 ![用户授权](https://zyrs-xyz.oss-cn-beijing.aliyuncs.com/other/%29958%5BLU%25HSX8%24P7GWH_GJCV.png)  
 
