@@ -11,6 +11,10 @@ Component({
       type: String,
       value: "#02c6dc"
     },
+    backColor: {
+      type: String,
+      value: "none"
+    },
   },
 
   /**
@@ -31,9 +35,13 @@ Component({
   methods: {
     _bindgetuserinfo:function(e){
 
-        console.log("用户绑定完成下面回调....",e);
+      console.log("用户绑定完成下面回调....",e);
 
       if (e.detail.userInfo != undefined){
+
+        /**
+         * 一下可以进行，登录成功的所有操作
+         */
          this.setData({
            userInfo: e.detail.userInfo
          })

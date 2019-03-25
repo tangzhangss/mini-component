@@ -3,8 +3,10 @@
 <!---是否显示组件 由组件内部决定 对比app.js userinfo类似的属性-->
 
 <!--
+  登录成功的一些操作自己在组件内定义
   color主要颜色  
+  backColor 背景颜色 默认 none
   authCallback授权回调函数（必须） 
   app.js is need "userInfo" attribute
 -->
-<auth bind:authCallback="authCallback" id="auth_modal"></auth>
+<auth bind:authCallback="authCallback" id="auth_modal" backColor="black"></auth>

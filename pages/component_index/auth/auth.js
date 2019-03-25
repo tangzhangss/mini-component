@@ -29,7 +29,7 @@ Page({
     if (e.detail.userInfo == undefined){
       web.showToastWithNoneIcon("您拒绝了授权！");
     }else{
-      web.showToastWithSuccess("授权成功！");
+      web.showToastWithSuccessIcon("授权成功！");
     }
   },
   /**

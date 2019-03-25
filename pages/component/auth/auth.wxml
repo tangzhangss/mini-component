@@ -1,5 +1,5 @@
 
-<view class='accredit' wx:if="{{!userInfo}}">
+<view class='accredit' wx:if="{{!userInfo}}" style='background:{{backColor}}'>
  <view class="accredit-view"> 
     <view style="font-size: 36rpx;font-weight:600;margin: 40rpx 0;text-align: center;">微信授权</view>
     <view style="padding: 0 40rpx; display: flex;">
